@@ -49,7 +49,7 @@ export const Audios = [
 export const QuranAudios = [
     { id: '001', source: surah001, name: 'Al-Fatihah', reciter: 'Mishary bin Rashid Alafasy' },
     { id: '018', source: surah018, name: 'Al-Kahf', reciter: 'Kamil Jaballah Alshani' },
-    { id: '032', source: surah032, name: 'As-Sajda', reciter: 'Kamil Jaballah Alshani' },
+    { id: '032', source: surah032, name: 'As-Sajda', reciter: 'Ramazan Simsek' },
     { id: '036', source: surah036, name: 'Ya-Sin', reciter: 'Shaykh Maher Al-Muaiqly' },
     { id: '055', source: surah055, name: 'Ar-Rahman', reciter: 'Shaykh Nazim Adil Al-Haqqani' },
     { id: '067', source: surah067, name: 'Al-Mulk', reciter: 'Mohammed Hashim Abdul Aziz' },
