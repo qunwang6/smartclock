@@ -43,8 +43,6 @@ export default function About() {
 
             <p></p>
 
-
-            <span className='badge p-0'>Also check out our Chrome Extension</span>
             <div className='bg-light px-2 pt-1 rounded'>
                 <a target="_blank" rel="noreferrer" href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">
                     <img src={ChromeExtensionBanner} className="img-fluid rounded" />
