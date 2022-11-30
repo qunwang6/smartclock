@@ -9,9 +9,8 @@ body {
 }
 
 #clockCanvas {
-  max-height: 95vh;
-  max-width: 95vw;
-  opacity: 0.87;
+  max-height: 91vh;
+  max-width: 91vw;
   cursor: pointer;
 }
 

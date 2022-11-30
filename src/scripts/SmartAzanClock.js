@@ -72,7 +72,7 @@ export const SmartAzanClock = {
         this.output.displayTime = format12(this.currentTimeString);
         this.output.hourAngle = TimeToRadians(this.currentDateTime.getHours() + ':' + this.currentDateTime.getMinutes(), 24);
         this.output.background = Backgrounds[this.currentVakit.name.toLowerCase() + (hijriDay % 3)];
-        this.output.clockOpacity = 1;
+        this.output.clockOpacity = 0.93;
         this.output.dim = 0;
 
         this.output.isWeekDay = this.currentDateTime.getDay() > 0 && this.currentDateTime.getDay() < 6;

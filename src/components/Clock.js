@@ -12,6 +12,7 @@ export default function Clock() {
     const black = '#0D0E0F';
     const gray = '#4B4E54';
     const white = 'whitesmoke';
+    const silver = 'silver';
 
     useEffect(() => {
 
@@ -20,25 +21,26 @@ export default function Clock() {
         updateBackground(background);
 
         sac.clearCanvas(ctx)
-            .fillCircle(ctx, 500, 0, 0, black)
-            .drawNumbers24(ctx, 469, 13, white)
-            .drawArcs(ctx, 431, 41, vakits)
-            .drawHand(ctx, midnightAngle, 419, 443, 3.5, black)
-            .printAt(ctx, '1/2', 14, white, 409, midnightAngle)
-            .drawHand(ctx, oneThirdAngle, 419, 443, 3.5, black)
-            .printAt(ctx, '1/3', 14, white, 409, oneThirdAngle)
-            .drawHand(ctx, twoThirdAngle, 419, 443, 3.5, black)
-            .printAt(ctx, '2/3', 14, white, 409, twoThirdAngle)
-            .markAlarms(ctx)
-            .drawArrow(ctx, hourAngle, 494, 57, 61, black)
-            .drawArrow(ctx, hourAngle, 494, 57, 57, white)
-            .drawCircle(ctx, 494, black, 7)
+            .fillCircle(ctx, 500, 0, 0, white, 0.41)
+            .fillCircle(ctx, 484, 0, 0, black)
+            .drawNumbers24(ctx, 455, 13, white)
+            .drawArcs(ctx, 421, 41, vakits)
+            .drawHand(ctx, midnightAngle, 413, 443, 3.5, black)
+            .printAt(ctx, '1/2', 14, white, 401, midnightAngle)
+            .drawHand(ctx, oneThirdAngle, 413, 443, 3.5, black)
+            .printAt(ctx, '1/3', 14, white, 401, oneThirdAngle)
+            .drawHand(ctx, twoThirdAngle, 413, 443, 3.5, black)
+            .printAt(ctx, '2/3', 14, white, 401, twoThirdAngle)
+            .markAlarms(ctx, 391)
+            .drawArrow(ctx, hourAngle, 482, 41, 61, black)
+            .drawArrow(ctx, hourAngle, 482, 41, 58, white)
+            .drawCircle(ctx, 482, black, 5)
             .print(ctx, displayTime, 250, white, -27)
-            .print(ctx, 'Elapsed ' + elapsed + ' · ' + nextVakit.name + ' in', 29, white, 109)
+            .print(ctx, 'Elapsed ' + elapsed + ' · ' + nextVakit.name + ' in', 31, white, 109)
             .print(ctx, nextText, 156, white, 223)
             .arcText(ctx, 'top', todaysDate, 51, 337, white)
-            .arcText(ctx, 'top', hijriDate, 33, 255, white)
-            .arcText(ctx, 'bottom', '#vakits#', 33, 377, white)
+            .arcText(ctx, 'top', hijriDate, 31, 255, white)
+            .arcText(ctx, 'bottom', '#vakits#', 31, 377, white)
     })
 
     const sac = {
@@ -109,12 +111,19 @@ export default function Clock() {
         drawArrow: (ctx, angle, x, width, height, color) => {
             ctx.save();
             ctx.translate(size / 2, size / 2);
+
+            if (dim === 1) {
+                width = width / 2.5;
+                height = height / 2.5;
+                x = x / 1.065;
+            }
+
             ctx.rotate(angle);
             ctx.beginPath();
             ctx.moveTo(x, -width);
             ctx.lineTo(x, width);
             ctx.lineTo(x - height, 0);
-            ctx.fillStyle = (dim === 1 ? black : color);
+            ctx.fillStyle = (dim === 1 ? silver : color);
             ctx.fill();
             ctx.restore();
             return sac;
@@ -123,7 +132,7 @@ export default function Clock() {
             ctx.save();
             ctx.translate(size / 2, size / 2);
             ctx.rotate(angle);
-            ctx.lineWidth = 3;
+            ctx.lineWidth = 2;
             ctx.strokeStyle = black;
             ctx.lineCap = "round";
             ctx.beginPath();
@@ -134,13 +143,13 @@ export default function Clock() {
             ctx.restore();
 
         },
-        markAlarms: (ctx) => {
+        markAlarms: (ctx, r) => {
             alarmSettings.map((a) => {
                 if ((a.frequency === 'E') || (a.frequency === 'W' && isWeekDay))
-                    sac.drawIndicator(ctx, 400, a.angle, 'red')
+                    sac.drawIndicator(ctx, r, a.angle, 'red')
             });
             naflAlarmSettings.map((a) => {
-                sac.drawIndicator(ctx, 400, a.angle, 'yellowgreen')
+                sac.drawIndicator(ctx, r, a.angle, 'yellowgreen')
             });
             return sac;
         },
@@ -203,14 +212,16 @@ export default function Clock() {
                 ctx.save();
                 ctx.translate(size / 2, size / 2);
                 ctx.beginPath();
-                ctx.strokeStyle = (dim === 1 ? gray : vakits[i].color);
+
                 if (currentVakit.index === i) {
-                    ctx.lineWidth = arcWidth * 0.33;
+                    ctx.strokeStyle = (dim === 1 ? 'gray' : vakits[i].color);
+                    ctx.lineWidth = arcWidth * 0.41;
                     ctx.globalAlpha = 1;
                 }
                 else {
-                    ctx.lineWidth = arcWidth * 0.33;
-                    ctx.globalAlpha = 0.71;
+                    ctx.strokeStyle = (dim === 1 ? 'gray' : vakits[i].color);
+                    ctx.lineWidth = arcWidth * 0.21;
+                    ctx.globalAlpha = 0.67;
                 }
                 ctx.arc(0, 0, r, vakits[i].startAngle24(), vakits[i].endAngle24() - borderPadding, false);
                 ctx.stroke();
