@@ -30,17 +30,21 @@ export default function About() {
             <p></p>
 
             <span className='badge p-0'>Some commonly used Android devices</span>
-            <div className='d-flex flex-row justify-content-start flex-nowrap gap-1'>
+            <div className='d-flex flex-row justify-content-between flex-nowrap gap-2'>
                 {Devices.map(d => (
-                    <div key={'d' + d.id} className='text-center'>
-                        <a className='btn btn-secondary' href={d.link} target="_blank">
+                    <div key={'d' + d.id} className='text-center col-6'>
+                        <a className='btn btn-secondary col-12' href={d.link} target="_blank">
                             <small>{d.name}</small>
                         </a>
                     </div>
                 ))}
             </div>
 
+            <p></p>
 
+            <a className='btn btn-warning col-12' href="https://ebay.us/i01XDk" target="_blank" rel="noreferer">
+                Prefer a readily set up device?<br />Check out our listings on {FontAwesome.Ebay}
+            </a>
             <p></p>
 
             <div className='bg-light px-2 pt-1 rounded'>

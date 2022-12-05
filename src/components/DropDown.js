@@ -7,9 +7,10 @@ export default function DropDown(props) {
 
     function updateValue(e) {
         let settingName = e.target.name.split('.')[0];
+        let fieldName = e.target.name.split('.')[1];
         let newSetting = {};
         let finalSettings = {};
-        newSetting[e.target.name.split('.')[1]] = e.target.value;
+        newSetting[fieldName] = e.target.value;
         finalSettings[settingName] = { ...eval(settingName), ...newSetting };
         document.activeElement.blur();
         updateSettings({ ...finalSettings });

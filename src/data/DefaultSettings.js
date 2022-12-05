@@ -4,7 +4,7 @@ export const DefaultSettings = {
     },  /* صلى الله عليه وعلى آله وسلم */
     calculationSettings: { method: 'ISNA', asrMethod: 'S' },
     deviceSettings: { azanCallsEnabled: 'Y', mode: 'N' },
-    azanSettings: { fajr: 13, dhuhr: 7, asr: 9, maghrib: 8, isha: 7 },
+    azanSettings: { fajr: '13', dhuhr: '7', asr: '9', maghrib: '6', isha: '3' },
     offsetSettings: { fajr: 0, dhuhr: 0, asr: 0, maghrib: 0, isha: 0 },
     alarmSettings: [],
     naflAlarmSettings: [],

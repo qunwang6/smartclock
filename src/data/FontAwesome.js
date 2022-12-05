@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faCheck, faEnvelope, faEraser, faGear, faBookOpen, faInfoCircle, faXmark, faPlay, faShieldHalved, faMinus, faPlus, faStop, faCheckSquare, faBell, faPlug } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faGoogle, faEbay } from "@fortawesome/free-brands-svg-icons"
 
 export const FontAwesome = {
     Check: <FontAwesomeIcon icon={faCheck} />,
@@ -20,5 +20,6 @@ export const FontAwesome = {
     Stop: <FontAwesomeIcon icon={faStop} />,
     Google: <FontAwesomeIcon icon={faGoogle} />,
     Bell: <FontAwesomeIcon icon={faBell} />,
-    Plug: <FontAwesomeIcon icon={faPlug} />
+    Plug: <FontAwesomeIcon icon={faPlug} />,
+    Ebay: <FontAwesomeIcon icon={faEbay} />
 }
