@@ -18,11 +18,11 @@ export default function About() {
             <p></p>
 
             <div className='d-flex flex-column gap-2'>
-                <div>It's free, safe and open source. It'll work even when offline and it requires: </div>
+                <div>{FontAwesome.Check} Free, safe and open source</div>
                 <div>{FontAwesome.Check} No registration</div>
                 <div>{FontAwesome.Check} No cookies</div>
-                <div>{FontAwesome.Check} No ads</div>
                 <div>{FontAwesome.Check} No app store downloads</div>
+                <div>{FontAwesome.Check} Works even when offline</div>
             </div>
 
             <p></p>
