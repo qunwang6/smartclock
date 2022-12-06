@@ -1,6 +1,5 @@
 import React from 'react'
 import { Devices } from '../data/Devices';
-import ChromeExtensionBanner from '../images/chrome-extension-banner.png'
 import { FontAwesome } from '../data/FontAwesome';
 
 export default function About() {
@@ -19,20 +18,19 @@ export default function About() {
             <p></p>
 
             <div className='d-flex flex-column gap-2'>
-                <div>{FontAwesome.Check} It's free, safe and open source</div>
-                <div>{FontAwesome.Check} No registration is required</div>
+                <div>It's free, safe and open source. It'll work even when offline and it requires: </div>
+                <div>{FontAwesome.Check} No registration</div>
                 <div>{FontAwesome.Check} No cookies</div>
                 <div>{FontAwesome.Check} No ads</div>
                 <div>{FontAwesome.Check} No app store downloads</div>
-                <div>{FontAwesome.Check} Works even when offline</div>
             </div>
 
             <p></p>
 
-            <span className='badge p-0'>Some commonly used Android devices</span>
-            <div className='d-flex flex-row justify-content-between flex-nowrap gap-2'>
+            Some commonly used Android devices:
+            <div className='d-flex flex-row justify-content-between flex-nowrap gap-2 mt-2'>
                 {Devices.map(d => (
-                    <div key={'d' + d.id} className='text-center col-6'>
+                    <div key={'d' + d.id}>
                         <a className='btn btn-secondary col-12' href={d.link} target="_blank">
                             <small>{d.name}</small>
                         </a>
@@ -42,30 +40,27 @@ export default function About() {
 
             <p></p>
 
-            <a className='btn btn-warning col-12' href="https://ebay.us/i01XDk" target="_blank" rel="noreferer">
+            <a className='btn btn-warning col-12' href="https://ebay.us/XF3NsK" target="_blank" rel="noreferer">
                 Prefer a readily set up device?<br />Check out our listings on {FontAwesome.Ebay}
             </a>
-            <p></p>
 
-            <div className='bg-light px-2 pt-1 rounded'>
-                <a target="_blank" rel="noreferrer" href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">
-                    <img src={ChromeExtensionBanner} className="img-fluid rounded" />
-                </a>
-            </div>
 
-            <p></p>
-
-            <div className='d-flex flex-row justify-content-between gap-1 align-items-center'>
+            <div className='d-flex flex-row justify-content-between gap-1 align-items-center mt-2'>
                 <div>
-                    <a className='btn btn-sm btn-dark' title='Open Source Code' href="https://github.com/smartazanclock/pwa" target="_blank" rel="noreferrer">{FontAwesome.Github} GitHub</a>
+                    <a className='btn btn-lg btn-dark' title='Privacy Policy' href="/privacy-policy/" target="_blank" rel="noreferrer">{FontAwesome.Shield}</a>
                 </div>
                 <div>
-                    <a className='btn btn-sm btn-dark' title='Privacy Policy' href="/privacy-policy/" target="_blank" rel="noreferrer">{FontAwesome.Shield} Privacy Policy</a>
+                    <a className='btn btn-lg btn-dark' title='Open Source Code' href="https://github.com/smartazanclock/pwa" target="_blank" rel="noreferrer">{FontAwesome.Github}</a>
                 </div>
                 <div>
-                    <a className='btn btn-sm btn-dark' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope} Contact</a>
+                    <a className='btn btn-lg btn-dark' title='Prayer Times Chrome Extension' href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">{FontAwesome.Chrome}</a>
+                </div>
+                <div>
+                    <a className='btn btn-lg btn-dark' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
                 </div>
             </div>
+
+            <p></p>
 
         </div>
     )
