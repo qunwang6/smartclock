@@ -56,6 +56,9 @@ export default function About() {
                     <a className='btn btn-lg btn-dark' title='Prayer Times Chrome Extension' href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">{FontAwesome.Chrome}</a>
                 </div>
                 <div>
+                    <a className='btn btn-lg btn-dark' title='Raspberry Pi Instructions' href="/setup/rpi/">{FontAwesome.RPi}</a>
+                </div>
+                <div>
                     <a className='btn btn-lg btn-dark' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
                 </div>
             </div>
