@@ -12,7 +12,7 @@ export default function About() {
             <p></p>
 
             SmartAzanClock is an online adhan clock which can also be used to turn
-            any Android, Windows or Raspberry Pi device into an actual adhan clock by
+            any Android, Windows or <a href="/setup/rpi/" className='whiteLink' target="_blank">Raspberry Pi</a> device into an actual adhan clock by
             simply adding it to (& running it from) the home screen.
 
             <p></p>

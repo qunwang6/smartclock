@@ -83,7 +83,7 @@ export default function Menu() {
 
 
                                 {navigator.onLine ? (<div>
-                                    <a className='badge whiteLink' href="/reset/">{FontAwesome.Eraser} Reset App</a>
+                                    <a className='btn btn-sm btn-dark' href="/reset/">{FontAwesome.Reset} Reset App</a>
                                 </div>) : null}
 
                             </div>
