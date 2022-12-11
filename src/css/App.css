@@ -32,11 +32,11 @@ body {
   color: whitesmoke;
 }
 
-#alarmMenu .nav-link {
+.subMenu .nav-link {
   color: silver;
 }
 
-#alarmMenu .nav-link.active {
+.subMenu .nav-link.active {
   color: whitesmoke;
 }
 

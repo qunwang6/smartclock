@@ -8,7 +8,7 @@ export default function Alarms() {
 
     return (
 
-        <div id='alarmMenu'>
+        <div className='subMenu'>
             <div className='mb-3'>
                 <ul className="nav nav-pills" id="pills-tab" role="tablist">
                     <li className="nav-item" role="presentation">
