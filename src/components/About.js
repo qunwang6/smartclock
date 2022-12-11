@@ -9,7 +9,7 @@ export default function About() {
 
             <h5>As-Salamu Alaykum</h5>
             <p></p>
-            SmartAzanClock.com is an online adhan clock. You can also use it to turn any Android or Raspberry Pi device into an actual adhan clock.
+            SmartAzanClock.com is an online adhan clock which can also be used to turn any Android or Raspberry Pi device into an actual adhan clock.
             <p></p>
 
             <div className='d-flex flex-column gap-2'>
@@ -20,7 +20,7 @@ export default function About() {
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>There's no registration, subscription, app store downloads or browser cookies.</div>
+                    <div>There's no registrations, subscriptions, app store downloads or browser cookies.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
@@ -30,7 +30,7 @@ export default function About() {
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It doesn't require any specific Android device or brand. It's up to you if you want to use your old phone or a higher-end tablet.</div>
+                    <div>It doesn't require any specific Android device or brand.</div>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ export default function About() {
 
                     <li className="nav-item" role="presentation">
                         <button className="nav-link btn-sm rounded-0 rounded-top active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#add-alarm" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                            {FontAwesome.Android} Android Instructions
+                            {FontAwesome.Android} Android
                         </button>
                     </li>
                     <li className="nav-item" role="presentation">
@@ -55,7 +55,7 @@ export default function About() {
                         Add smartazanclock.com to your home screen and run it. That's it!
                     </div>
                     <div className="tab-pane fade" id="add-nafl-alarm" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <a href="/setup/rpi/" className='whiteLink'>Instructions to run SmartAzanClock.com on Raspberry Pi in kiosk mode.</a>
+                        <a href="/setup/rpi/" className='whiteLink'>Instructions to run SmartAzanClock.com on a Raspberry Pi in kiosk mode.</a>
                     </div>
                 </div>
             </div>
