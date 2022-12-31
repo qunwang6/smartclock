@@ -1,5 +1,4 @@
 import React from 'react'
-import { Devices } from '../data/Devices';
 import { FontAwesome } from '../data/FontAwesome';
 
 export default function About() {
@@ -20,7 +19,7 @@ export default function About() {
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>There's no registration, subscriptions, app store downloads or browser cookies.</div>
+                    <div>There's no registration, no subscriptions, no app store downloads or browser cookies.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
@@ -60,25 +59,8 @@ export default function About() {
                 </div>
             </div>
 
-            <p></p>
-
-            Some commonly used Android devices:
-            <div className='d-flex flex-row justify-content-between flex-nowrap gap-2 mt-2'>
-                {Devices.map(d => (
-                    <div key={'d' + d.id}>
-                        <a className='btn btn-secondary col-12' href={d.link} target="_blank">
-                            <small>{d.name}</small>
-                        </a>
-                    </div>
-                ))}
-            </div>
 
             <p></p>
-
-            <a className='btn btn-warning col-12' href="https://ebay.us/XF3NsK" target="_blank" rel="noreferer">
-                Prefer a readily set up device?<br />Check out our listings on {FontAwesome.Ebay}
-            </a>
-
 
             <div className='d-flex flex-row justify-content-between gap-1 align-items-center mt-2'>
                 <div>
@@ -88,11 +70,15 @@ export default function About() {
                     <a className='btn btn-lg btn-dark' title='Open Source Code' href="https://github.com/smartazanclock/pwa" target="_blank" rel="noreferrer">{FontAwesome.Github}</a>
                 </div>
                 <div>
+                    <a className='btn btn-lg btn-dark' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
+                </div>
+                <div>
                     <a className='btn btn-lg btn-dark' title='Prayer Times Chrome Extension' href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">{FontAwesome.Chrome}</a>
                 </div>
                 <div>
-                    <a className='btn btn-lg btn-dark' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
+                    <a className='btn btn-lg btn-dark' title='Readily set up devices on ebay' href="https://ebay.us/XF3NsK">{FontAwesome.Ebay}</a>
                 </div>
+
             </div>
 
             <p></p>
