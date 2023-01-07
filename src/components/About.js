@@ -50,9 +50,9 @@ export default function About() {
 
             <p></p>
 
-            <div className='fs-5'>
-                Add smartazanclock.com to your home screen and run it. That's it!
-            </div>
+
+            Add smartazanclock.com to your home screen and run it. That's it!
+
             <p></p>
 
             <div className='d-flex flex-row justify-content-between gap-1 align-items-center mt-4'>
