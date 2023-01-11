@@ -257,11 +257,7 @@ export default function PrayTimes(method) {
 
             times = this.adjustTimes(times);
             times = this.tuneTimes(times);
-
-            // add midnight time
-            // times.midnight = (setting.midnight == 'Jafari') ? times.sunset + this.timeDiff(times.sunset, times.fajr) / 2 : times.sunset + this.timeDiff(times.sunset, times.sunrise) / 2;
             times.midnight = times.maghrib + this.timeDiff(times.maghrib, times.fajr) / 2;
-
             return this.modifyFormats(times);
         },
 

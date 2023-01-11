@@ -57,22 +57,22 @@ export default function About() {
 
             <div className='d-flex flex-row justify-content-between gap-1 align-items-center mt-4'>
                 <div>
-                    <a className='whiteLink fs-2' title='Privacy Policy' href="/privacy-policy/" rel="noreferrer">{FontAwesome.Shield}</a>
+                    <a className='whiteLink fs-3' title='Privacy Policy' href="/privacy-policy/" rel="noreferrer">{FontAwesome.Shield}</a>
                 </div>
                 <div>
-                    <a className='whiteLink fs-2' title='Open Source Code' href="https://github.com/smartazanclock/pwa" rel="noreferrer">{FontAwesome.Github}</a>
+                    <a className='whiteLink fs-3' title='Open Source Code' href="https://github.com/smartazanclock/pwa" rel="noreferrer">{FontAwesome.Github}</a>
                 </div>
                 <div>
-                    <a className='whiteLink fs-2' title='Prayer Times Chrome Extension' href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">{FontAwesome.Chrome}</a>
+                    <a className='whiteLink fs-3' title='Prayer Times Chrome Extension' href="https://chrome.google.com/webstore/detail/prayer-times-chrome-exten/fbkmgnkliklgbmanjkmiihkdioepnkce">{FontAwesome.Chrome}</a>
                 </div>
                 <div>
-                    <a className='whiteLink fs-2' href="/setup/rpi/" title='Raspberry Pi Adhan Clock Setup Instructions'>{FontAwesome.RPi}</a>
+                    <a className='whiteLink fs-3' href="/setup/rpi/" title='Raspberry Pi Adhan Clock Setup Instructions'>{FontAwesome.RPi}</a>
                 </div>
                 <div>
-                    <a className='whiteLink fs-2' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
+                    <a className='whiteLink fs-3' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
                 </div>
                 <div>
-                    <a className='whiteLink fs-2' title='Readily set up devices on ebay' href="https://ebay.us/XF3NsK">{FontAwesome.Ebay}</a>
+                    <a className='whiteLink fs-3' title='Readily set up devices on ebay' href="https://ebay.us/XF3NsK">{FontAwesome.Ebay}</a>
                 </div>
             </div>
 
