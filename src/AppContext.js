@@ -33,6 +33,7 @@ export default function AppContextProvider() {
         const interval = setInterval(() => {
             let seconds = new Date().getSeconds()
             let settings = JSON.parse(localStorage.getItem('settings'));
+
             if (!settings || settings.settingsVersion !== DefaultSettings.settingsVersion) {
                 initUser('initUser: settings removed or upgraded');
             }

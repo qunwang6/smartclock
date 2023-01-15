@@ -20,6 +20,8 @@ export default function Clock() {
 
         updateBackground(background);
 
+        document.title = nextVakit.name + ' in ' + nextText + ' - ' + locationSettings.address + ' Prayer Times - Smart Azan Clock';
+
         sac.clearCanvas(ctx)
             .fillCircle(ctx, 500, 0, 0, white, 0.33)
             .fillCircle(ctx, 488, 0, 0, black)
