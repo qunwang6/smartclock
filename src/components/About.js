@@ -71,9 +71,6 @@ export default function About() {
                 <div>
                     <a className='whiteLink fs-3' title='smartazanclock@gmail.com' href="mailto:smartazanclock@gmail.com">{FontAwesome.Envelope}</a>
                 </div>
-                <div>
-                    <a className='whiteLink fs-3' title='Readily set up devices on ebay' href="https://ebay.us/XF3NsK">{FontAwesome.Ebay}</a>
-                </div>
             </div>
 
             <p></p>
