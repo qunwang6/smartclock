@@ -39,7 +39,7 @@ export default function Clock() {
             .print(ctx, 'Elapsed ' + elapsed + ' · ' + nextVakit.name + ' in', 31, white, 109)
             .print(ctx, nextText, 156, white, 223)
             .arcText(ctx, 'top', todaysDate, 51, 337, white)
-            .arcText(ctx, 'top', hijriDate, 33, 255, white)
+            .arcText(ctx, 'top', hijriDate, 39, 255, white)
             .arcText(ctx, 'bottom', '#vakits#', 31, 377, white)
     })
 
