@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesome } from '../data/FontAwesome';
+import { Devices } from '../data/Devices';
 
 export default function About() {
 
@@ -52,6 +53,25 @@ export default function About() {
 
 
             Add smartazanclock.com to your home screen and run it. That's it!
+
+            <p></p>
+
+            <div className='card p-0'>
+                <div className='card-body p-2'>
+                    <span className='badge bg-dark'>Some Android device suggestions</span>
+                    <div className='d-flex flex-row justify-content-start flex-nowrap gap-1'>
+                        {Devices.map(d => (
+                            <div key={'d' + d.id} className='text-center flex-grow-1'>
+                                <a href={d.link} target="_blank">
+                                    <img src={d.image} className="img-fluid" />
+                                    <span className='badge text-dark'>{d.name}</span>
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
 
             <p></p>
 
