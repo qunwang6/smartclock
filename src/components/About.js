@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesome } from '../data/FontAwesome';
-import { Devices } from '../data/Devices';
+import lenovoM8Image from '../images/lenovo-m8-tab.jpg'
+import lenovoYTImage from '../images/lenovo-yt3.jpg'
 
 export default function About() {
 
@@ -58,20 +59,23 @@ export default function About() {
 
             <div className='card p-0'>
                 <div className='card-body p-2'>
-                    <span className='badge bg-dark'>Some Android device suggestions</span>
-                    <div className='d-flex flex-row justify-content-start flex-nowrap gap-1'>
-                        {Devices.map(d => (
-                            <div key={'d' + d.id} className='text-center flex-grow-1'>
-                                <a href={d.link} target="_blank">
-                                    <img src={d.image} className="img-fluid" />
-                                    <span className='badge text-dark'>{d.name}</span>
-                                </a>
-                            </div>
-                        ))}
+                    <div className='badge bg-dark'>Some Android device suggestions</div>
+                    <div className='d-flex flex-row align-items-end'>
+                        <div className='text-center flex-grow-1'>
+                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab+m8" target="_blank">
+                                <img src={lenovoM8Image} className="img-fluid" />
+                                <div className='badge text-dark'>Lenovo Smart Tab M8</div>
+                            </a>
+                        </div>
+                        <div className='text-center flex-grow-1'>
+                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab+3" target="_blank">
+                                <img src={lenovoYTImage} className="img-fluid" />
+                                <div className='badge text-dark'>Lenovo Yoga Tab 3</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
 
             <p></p>
 
