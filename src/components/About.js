@@ -16,61 +16,61 @@ export default function About() {
             <div className='d-flex flex-column gap-2'>
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It's free, safe and open source</div>
+                    <div>Free, safe and open source.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>There's no registration</div>
+                    <div>No registration.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>No subscriptions</div>
+                    <div>No subscriptions.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>No app store downloads</div>
+                    <div>No app store downloads.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>No browser cookies</div>
+                    <div>No browser cookies.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It works even when offline</div>
+                    <div>It works even when offline.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It doesn't require any specific Android device or brand</div>
+                    <div>It doesn't require any specific Android device or brand.</div>
                 </div>
             </div>
 
             <p></p>
 
 
-            Add smartazanclock.com to your home screen and run it. That's it!
+            Get your own device, add smartazanclock.com to your home screen and run it. That's it!
 
             <p></p>
 
             <div className='card p-0'>
-                <div className='card-body p-2'>
-                    <div className='badge bg-dark'>Some Android device suggestions</div>
+                <div className='card-body px-2 py-1'>
+                    <div className='badge text-dark'>Device suggestions</div>
                     <div className='d-flex flex-row align-items-end'>
                         <div className='text-center flex-grow-1'>
-                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab+m8" target="_blank">
+                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab" target="_blank">
                                 <img src={lenovoM8Image} className="img-fluid" />
-                                <div className='badge text-dark'>Lenovo Smart Tab M8</div>
+                                <div className='badge text-dark'>Lenovo Smart Tab</div>
                             </a>
                         </div>
                         <div className='text-center flex-grow-1'>
-                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab+3" target="_blank">
+                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab" target="_blank">
                                 <img src={lenovoYTImage} className="img-fluid" />
-                                <div className='badge text-dark'>Lenovo Yoga Tab 3</div>
+                                <div className='badge text-dark'>Lenovo Yoga Tab</div>
                             </a>
                         </div>
                     </div>
