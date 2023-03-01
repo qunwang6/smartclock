@@ -41,12 +41,12 @@ export default function About() {
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It works even when offline.</div>
+                    <div>Works even when offline.</div>
                 </div>
 
                 <div className='d-flex flex-row'>
                     <div className='mx-1'>{FontAwesome.Check}</div>
-                    <div>It doesn't require any specific Android device or brand.</div>
+                    <div>Doesn't require any specific Android device.</div>
                 </div>
             </div>
 
