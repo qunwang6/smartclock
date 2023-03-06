@@ -53,7 +53,7 @@ export default function About() {
             <p></p>
 
 
-            Get your own device, add smartazanclock.com to your home screen and run it. That's it!
+            Get your own device, add SmartAzanClock to your home screen and run it. That's it!
 
             <p></p>
 
