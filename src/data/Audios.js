@@ -45,11 +45,7 @@ export const Audios = [
 
 /* Surahs commonly recited after Salah */
 export const QuranAudios = [
-    { id: '001', source: surah001, name: 'Al-Fatihah', reciter: 'Mishary bin Rashid Alafasy' },
-    { id: '018', source: surah018, name: 'Al-Kahf', reciter: 'Kamil Jaballah Alshani' },
-    { id: '036', source: surah036, name: 'Ya-Sin', reciter: 'Shaykh Maher Al-Muaiqly' },
-    { id: '067', source: surah067, name: 'Al-Mulk', reciter: 'Mohammed Hashim Abdul Aziz' },
-    { id: '078', source: surah078, name: 'An-Naba', reciter: 'Mohammed Bin Saleh Abu Zaid' }
+    { id: '001', source: surah001, name: 'Al-Fatihah', reciter: 'Shaykh Maher Al-Mu\'aiqly', mp3: 'https://server12.mp3quran.net/maher/001.mp3' }
 ]
 
 export const Azans = Audios.filter(a => a.isAzan);

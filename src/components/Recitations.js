@@ -26,7 +26,16 @@ export default function Recitations() {
                     </div>
                     <div>{q.id}</div>
                 </div>
+                <div className='p-2'>
+                    <audio controls>
+                        <source src={q.mp3}></source>
+                    </audio>
+                </div>
             </button>))}
+
+            <p></p>
+
+            <span className='badge bg-secondary text-light'>Qur'an audios served by mp3quran.net</span>
 
         </div>
     )

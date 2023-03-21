@@ -50,5 +50,6 @@ self.addEventListener('install', event => {
 registerRoute("/", new NetworkFirst());
 registerRoute("/privacy-policy/", new NetworkFirst());
 registerRoute("/reset/", new NetworkOnly());
+registerRoute(({ url }) => url.href.endsWith('.mp3'), new NetworkFirst());
 
 
