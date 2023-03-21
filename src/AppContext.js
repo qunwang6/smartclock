@@ -101,7 +101,7 @@ export default function AppContextProvider() {
             wlock = await navigator.wakeLock.request('screen');
             dol('Screen Wake Lock is active');
         } catch (err) {
-            console.error(err);
+            /* console.error(err); */
         }
     };
 
