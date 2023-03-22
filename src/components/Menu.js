@@ -32,12 +32,14 @@ export default function Menu() {
                                     {FontAwesome.Gear}
                                 </button>
                             </li>
-                            <li className='nav-item'>
+
+                            {navigator.onLine ? (<li className='nav-item'>
                                 <button ref={recitationsTab} className="nav-link fs-4" id="recitations-tab" data-bs-toggle="tab"
                                     data-bs-target="#recitations" type="button" role="tab">
                                     {FontAwesome.Book}
                                 </button>
-                            </li>
+                            </li>) : null}
+
                             {deviceSettings.azanCallsEnabled === 'Y' ? (<li className='nav-item'>
                                 <button className="nav-link fs-4" id="alarms-tab" data-bs-toggle="tab"
                                     data-bs-target="#alarms" type="button" role="tab">

@@ -35,7 +35,7 @@ export default function Recitations() {
 
             <p></p>
 
-            <span className='badge bg-secondary text-light'>Qur'an audios served by mp3quran.net</span>
+            <a href="https://mp3quran.net/eng" target="_blank"><span className='badge bg-dark text-light'>Qur'an audios are served by mp3Quran.net.</span></a>
 
         </div>
     )

@@ -11,41 +11,37 @@ import audio10 from '../mp3s/10.mp3';
 import audio11 from '../mp3s/11.mp3';
 import audio12 from '../mp3s/12.mp3';
 import audio13 from '../mp3s/13.mp3';
-
 import audio101 from '../mp3s/101.mp3';
 import audio102 from '../mp3s/102.mp3';
 import audio103 from '../mp3s/103.mp3';
 
-import surah001 from '../mp3s/Quran/001.mp3';
-import surah018 from '../mp3s/Quran/018.mp3';
-import surah036 from '../mp3s/Quran/036.mp3';
-import surah067 from '../mp3s/Quran/067.mp3';
-import surah078 from '../mp3s/Quran/078.mp3';
-
 import { TimeToRadians } from '../scripts/Common';
 
 export const Audios = [
-    { id: 1, source: audio1, name: 'Bosnian Style by Eldin Huseinbegovic', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 2, source: audio2, name: 'Dubai Style by Abdulrahman Al-Hindi', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 3, source: audio3, name: 'Egyptian Style', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 4, source: audio4, name: 'Heartwarming Azan Recitation', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 5, source: audio5, name: 'Makkah Al-Mukarramah Style', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 6, source: audio6, name: 'Masjid Al-Aqsa Style', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 7, source: audio7, name: 'Mishary Al-Afasy', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 8, source: audio8, name: 'Ottoman Style by Mawlana Shaykh Nazim', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 9, source: audio9, name: 'Turkish Style by Remzi Er', isAzan: true, isFajrAzan: false, isAlarm: false },
-    { id: 10, source: audio10, name: 'Fajr Azan by Mansoor Az-Zahrani', isAzan: false, isFajrAzan: true, isAlarm: false },
-    { id: 11, source: audio11, name: 'Fajr Azan by Mishary Al-Afasy', isAzan: false, isFajrAzan: true, isAlarm: false },
-    { id: 12, source: audio12, name: 'Madina Fajr Azan by Shaykh Surayhi', isAzan: false, isFajrAzan: true, isAlarm: false },
-    { id: 13, source: audio13, name: 'Fajr Azan by Shaykh Ali Ahmed Mullah', isAzan: false, isFajrAzan: true, isAlarm: false },
-    { id: 101, source: audio101, name: 'Bismillahirrahmanirrahim', isAzan: true, isFajrAzan: true, isAlarm: true },
-    { id: 102, source: audio102, name: 'Soft Beep Sound', isAzan: true, isFajrAzan: true, isAlarm: true },
-    { id: 103, source: audio103, name: 'As-Salatu Khayrun Minan Nawm', isAzan: false, isFajrAzan: false, isAlarm: true }
+    { id: 1, source: audio1, name: 'Bosnian Style by Eldin Huseinbegovic (3:11)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 2, source: audio2, name: 'Dubai Style by Abdulrahman Al-Hindi (2:32)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 3, source: audio3, name: 'Egyptian Style (3:25)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 4, source: audio4, name: 'Heartwarming Azan Recitation (3:47)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 5, source: audio5, name: 'Makkah Al-Mukarramah Style (3:44)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 6, source: audio6, name: 'Masjid Al-Aqsa Style (4:07)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 7, source: audio7, name: 'Mishary Al-Afasy (4:17)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 8, source: audio8, name: 'Ottoman Style by Mawlana Shaykh Nazim (2:38)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 9, source: audio9, name: 'Turkish Style by Remzi Er (4:08)', isAzan: true, isFajrAzan: false, isAlarm: false },
+    { id: 10, source: audio10, name: 'Fajr Azan by Mansoor Az-Zahrani (3:26)', isAzan: false, isFajrAzan: true, isAlarm: false },
+    { id: 11, source: audio11, name: 'Fajr Azan by Mishary Al-Afasy (3:29)', isAzan: false, isFajrAzan: true, isAlarm: false },
+    { id: 12, source: audio12, name: 'Madina Fajr Azan by Shaykh Surayhi (4:54)', isAzan: false, isFajrAzan: true, isAlarm: false },
+    { id: 13, source: audio13, name: 'Fajr Azan by Shaykh Ali Ahmed Mullah (4:35)', isAzan: false, isFajrAzan: true, isAlarm: false },
+    { id: 101, source: audio101, name: 'Bismillahirrahmanirrahim (0:05)', isAzan: true, isFajrAzan: true, isAlarm: true },
+    { id: 102, source: audio102, name: 'Soft Beep Sound (0:01)', isAzan: true, isFajrAzan: true, isAlarm: true },
+    { id: 103, source: audio103, name: 'As-Salatu Khayrun Minan Nawm (0:28)', isAzan: false, isFajrAzan: false, isAlarm: true }
 ]
 
 /* Surahs commonly recited after Salah */
 export const QuranAudios = [
-    { id: '001', source: surah001, name: 'Al-Fatihah', reciter: 'Shaykh Maher Al-Mu\'aiqly', mp3: 'https://server12.mp3quran.net/maher/001.mp3' }
+    { id: '001', name: 'Al-Fatihah', reciter: 'Shaykh Maher Al-Muaiqly', mp3: 'https://server12.mp3quran.net/maher/001.mp3' },
+    { id: '018', name: 'Al-Kahf', reciter: 'Shaykh Maher Al-Muaiqly', mp3: 'https://server12.mp3quran.net/maher/018.mp3' },
+    { id: '036', name: 'YaSin', reciter: 'Shaykh Maher Al-Muaiqly', mp3: 'https://server12.mp3quran.net/maher/036.mp3' },
+    { id: '067', name: 'Al-Mulk', reciter: 'Shaykh Maher Al-Muaiqly', mp3: 'https://server12.mp3quran.net/maher/067.mp3' }
 ]
 
 export const Azans = Audios.filter(a => a.isAzan);

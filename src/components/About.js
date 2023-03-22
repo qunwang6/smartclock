@@ -57,25 +57,27 @@ export default function About() {
 
             <p></p>
 
-            <div className='card p-0'>
-                <div className='card-body px-2 py-1'>
-                    <div className='badge text-dark'>Device suggestions</div>
-                    <div className='d-flex flex-row align-items-end'>
-                        <div className='text-center flex-grow-1'>
-                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab" target="_blank">
-                                <img src={lenovoM8Image} className="img-fluid" />
-                                <div className='badge text-dark'>Lenovo Smart Tab</div>
-                            </a>
-                        </div>
-                        <div className='text-center flex-grow-1'>
-                            <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab" target="_blank">
-                                <img src={lenovoYTImage} className="img-fluid" />
-                                <div className='badge text-dark'>Lenovo Yoga Tab</div>
-                            </a>
+            {navigator.onLine ? (
+                <div className='card p-0'>
+                    <div className='card-body px-2 py-1'>
+                        <div className='badge text-dark'>Device suggestions</div>
+                        <div className='d-flex flex-row align-items-end'>
+                            <div className='text-center flex-grow-1'>
+                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab" target="_blank">
+                                    <img src={lenovoM8Image} className="img-fluid" />
+                                    <div className='badge text-dark'>Lenovo Smart Tab</div>
+                                </a>
+                            </div>
+                            <div className='text-center flex-grow-1'>
+                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab" target="_blank">
+                                    <img src={lenovoYTImage} className="img-fluid" />
+                                    <div className='badge text-dark'>Lenovo Yoga Tab</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            ) : null}
 
             <p></p>
 
