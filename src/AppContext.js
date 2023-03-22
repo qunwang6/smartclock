@@ -178,8 +178,6 @@ const initUser = (info) => {
     }
 }
 
-
-
 const isIOS = () => {
     return [
         'iPad Simulator',

@@ -53,7 +53,7 @@ export default function AudioPlayer() {
         if (QA) {
             localStorage.removeItem("QuranAudio");
             let audio = QuranAudios.find(a => a.id === QA.id);
-            audioPlayer.current.src = audio.source;
+            audioPlayer.current.src = audio.mp3;
             let promise = audioPlayer.current.play();
             if (promise) {
                 promise.then(_ => {
@@ -86,18 +86,15 @@ export default function AudioPlayer() {
     return (
         <>
             <div ref={playerDiv} onClick={stopAudio} className="audioButtonDiv">
-                <div className='d-flex h-100 justify-content-start align-items-top'>
+                <div className='d-flex flex-column gap-2 m-4'>
                     <div>
-                        <audio id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} />
-                    </div>
-                    <div className='fs-2 text-light p-2'>
-                        {FontAwesome.Stop} Tap screen to stop audio
+                        <audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} />
                     </div>
                 </div>
             </div>
             <div ref={playButtonDiv} onClick={playAudio} className="audioButtonDiv">
                 <div className='d-flex h-100 justify-content-start align-items-top'>
-                    <div className='fs-2 text-light p-2'>
+                    <div className='fs-4 text-light p-2'>
                         {FontAwesome.Play} Tap screen to play audio
                     </div>
                 </div>
