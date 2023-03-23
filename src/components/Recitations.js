@@ -31,7 +31,7 @@ export default function Recitations() {
 
             <p></p>
 
-            <a href="https://mp3quran.net/eng" target="_blank"><span className='badge bg-dark text-light'>Qur'an audios are hosted by mp3Quran.net.</span></a>
+            <a href="https://mp3quran.net/eng/maher" className='btn btn-sm btn-secondary col-12' target="_blank"><b>mp3Quran.net</b></a>
 
         </div>
     )
