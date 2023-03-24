@@ -7,6 +7,7 @@ export default function AudioPlayer() {
 
     const { time, locationSettings, deviceSettings, dol } = useContext(AppContext)
     const playerDiv = useRef(null)
+    const audioTitle = useRef(null)
     const playButtonDiv = useRef(null)
     const audioPlayer = useRef(null)
 
@@ -26,6 +27,7 @@ export default function AudioPlayer() {
                     localStorage.setItem("AAA", JSON.stringify({ ...AU }));
                     let audio = Audios.find(a => a.id === AU.id);
                     audioPlayer.current.src = audio.source;
+                    audioTitle.current.innerHTML = audio.name;
                     let promise = audioPlayer.current.play();
                     if (promise) {
                         promise.then(_ => {
@@ -37,6 +39,7 @@ export default function AudioPlayer() {
                             dol(error);
                             playerDiv.current.style.visibility = 'hidden';
                             playButtonDiv.current.style.visibility = 'visible';
+                            audioTitle.current.innerHTML = '';
                         });
                     }
                 }
@@ -44,6 +47,7 @@ export default function AudioPlayer() {
             else {
                 localStorage.removeItem("AAA");
                 playButtonDiv.current.style.visibility = 'hidden';
+                audioTitle.current.innerHTML = '';
             }
 
         }
@@ -54,6 +58,7 @@ export default function AudioPlayer() {
             localStorage.removeItem("QuranAudio");
             let audio = QuranAudios.find(a => a.id === QA.id);
             audioPlayer.current.src = audio.mp3;
+            audioTitle.current.innerHTML = 'Surah ' + audio.name + ' recitation by ' + audio.reciter;
             let promise = audioPlayer.current.play();
             if (promise) {
                 promise.then(_ => {
@@ -64,6 +69,7 @@ export default function AudioPlayer() {
                     dol(error);
                     playerDiv.current.style.visibility = 'hidden';
                     playButtonDiv.current.style.visibility = 'visible';
+                    audioTitle.current.innerHTML = '';
                 });
             }
         }
@@ -75,6 +81,7 @@ export default function AudioPlayer() {
         audioPlayer.current.currentTime = 0;
         playerDiv.current.style.visibility = 'hidden';
         playButtonDiv.current.style.visibility = 'hidden';
+        audioTitle.current.innerHTML = '';
     }
 
     const playAudio = () => {
@@ -87,9 +94,8 @@ export default function AudioPlayer() {
         <>
             <div ref={playerDiv} onClick={stopAudio} className="audioButtonDiv">
                 <div className='d-flex flex-column gap-2 m-4'>
-                    <div>
-                        <audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} />
-                    </div>
+                    <div><audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} /></div>
+                    <div ref={audioTitle} className="text-light text-start"></div>
                 </div>
             </div>
             <div ref={playButtonDiv} onClick={playAudio} className="audioButtonDiv">
