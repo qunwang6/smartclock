@@ -21,14 +21,6 @@
             }
         });
 
-
-        /* we don't use cookies anymore */
-        var allCookies = document.cookie.split(';');
-        for (let i = 0; i < allCookies.length; i++) {
-            document.cookie = allCookies[i] + "=;expires=" + new Date(0).toUTCString();
-        }
-
-
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker
                 .register("../service-worker.js")

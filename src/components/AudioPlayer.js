@@ -5,7 +5,7 @@ import { FontAwesome } from '../data/FontAwesome';
 
 export default function AudioPlayer() {
 
-    const { time, locationSettings, deviceSettings, dol } = useContext(AppContext)
+    const { time, locationSettings, dol } = useContext(AppContext)
     const playerDiv = useRef(null)
     const audioTitle = useRef(null)
     const playButtonDiv = useRef(null)
@@ -58,7 +58,7 @@ export default function AudioPlayer() {
             localStorage.removeItem("QuranAudio");
             let audio = QuranAudios.find(a => a.id === QA.id);
             audioPlayer.current.src = audio.mp3;
-            audioTitle.current.innerHTML = 'Surah ' + audio.name + ' recitation by ' + audio.reciter;
+            audioTitle.current.innerHTML = 'Surah ' + audio.name;
             let promise = audioPlayer.current.play();
             if (promise) {
                 promise.then(_ => {
@@ -93,9 +93,9 @@ export default function AudioPlayer() {
     return (
         <>
             <div ref={playerDiv} onClick={stopAudio} className="audioButtonDiv">
-                <div className='d-flex flex-column gap-2 m-4'>
-                    <div><audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} /></div>
-                    <div ref={audioTitle} className="text-light text-start"></div>
+                <div className='d-flex flex-column gap-2 m-4 col-2'>
+                    <div className="flex-grow-1 text-center"><audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} /></div>
+                    <div className="flex-grow-1 small text-light text-center" ref={audioTitle}></div>
                 </div>
             </div>
             <div ref={playButtonDiv} onClick={playAudio} className="audioButtonDiv">
