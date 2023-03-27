@@ -93,9 +93,9 @@ export default function AudioPlayer() {
     return (
         <>
             <div ref={playerDiv} onClick={stopAudio} className="audioButtonDiv">
-                <div className='d-flex flex-column gap-2 m-4 col-2'>
-                    <div className="flex-grow-1 text-center"><audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} /></div>
-                    <div className="flex-grow-1 small text-light text-center" ref={audioTitle}></div>
+                <div className='d-flex flex-column gap-2 m-4 col-3 flex-nowrap'>
+                    <div className="text-center"><audio controls id="audioPlayer" src='' ref={audioPlayer} onEnded={stopAudio} /></div>
+                    <div className="small text-light text-center" ref={audioTitle}></div>
                 </div>
             </div>
             <div ref={playButtonDiv} onClick={playAudio} className="audioButtonDiv">
