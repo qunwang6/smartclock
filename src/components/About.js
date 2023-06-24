@@ -69,9 +69,9 @@ export default function About() {
                                 </a>
                             </div>
                             <div className='text-center flex-grow-1'>
-                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+m10+smart+dock" target="_blank">
+                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+m10+p10+smart+dock" target="_blank">
                                     <img src={lenovoM10Image} className="img-fluid" />
-                                    <div className='badge text-dark'>Lenovo M10</div>
+                                    <div className='badge text-dark'>Lenovo M10 or P10</div>
                                 </a>
                             </div>
                         </div>
