@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesome } from '../data/FontAwesome';
 import lenovoM8Image from '../images/lenovo-m8-tab.jpg'
-import lenovoYTImage from '../images/lenovo-yt3.jpg'
+import lenovoM10Image from '../images/lenovo-m10-tab.jpg'
 
 export default function About() {
 
@@ -63,15 +63,15 @@ export default function About() {
                         <div className='badge text-dark'>Device suggestions</div>
                         <div className='d-flex flex-row align-items-end'>
                             <div className='text-center flex-grow-1'>
-                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+smart+tab" target="_blank">
+                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+m8+smart+tab" target="_blank">
                                     <img src={lenovoM8Image} className="img-fluid" />
-                                    <div className='badge text-dark'>Lenovo Smart Tab</div>
+                                    <div className='badge text-dark'>Lenovo M8</div>
                                 </a>
                             </div>
                             <div className='text-center flex-grow-1'>
-                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+yoga+tab" target="_blank">
-                                    <img src={lenovoYTImage} className="img-fluid" />
-                                    <div className='badge text-dark'>Lenovo Yoga Tab</div>
+                                <a href="https://www.google.com/search?tbm=shop&q=lenovo+m10+smart+dock" target="_blank">
+                                    <img src={lenovoM10Image} className="img-fluid" />
+                                    <div className='badge text-dark'>Lenovo M10</div>
                                 </a>
                             </div>
                         </div>
