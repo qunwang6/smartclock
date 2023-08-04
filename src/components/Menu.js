@@ -48,10 +48,10 @@ export default function Menu() {
                             </li>) : null}
 
                             <li className='nav-item'>
-                                <button className="nav-link fs-4" id="about-tab" data-bs-toggle="tab"
-                                    data-bs-target="#about" type="button" role="tab">
-                                    // {FontAwesome.Info}
-                                </button>
+                                // <button className="nav-link fs-4" id="about-tab" data-bs-toggle="tab"
+                                //     data-bs-target="#about" type="button" role="tab">
+                                //     {FontAwesome.Info}
+                                // </button>
                             </li>
                         </ul>
                     </div>
